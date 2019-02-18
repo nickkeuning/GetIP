@@ -6,15 +6,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="140" Width="362">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Height="200"
+    Width="500">
 
-    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <TextBlock x:Name="AddressDisplay"
+    <Grid
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch">
+        <TextBlock
+            x:Name="AddressDisplay"
             HorizontalAlignment="Left"
-            Margin="138,0,0,0"
-            VerticalAlignment="Center" 
-            Width="150"/>
-        <TextBlock HorizontalAlignment="Left" Margin="65,0,0,0" Text="IP Address:" TextWrapping="Wrap" VerticalAlignment="Center" Width="73"/>
+            Margin="200,0,0,0"
+            VerticalAlignment="Center"
+            Width="auto"
+            FontSize="36"
+            Text=""/>
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="10,0,0,0"
+            Text="IP Address:"
+            TextWrapping="Wrap"
+            VerticalAlignment="Center"
+            Width="187"
+            FontSize="36"
+            RenderTransformOrigin="0.321,0.464" />
 
     </Grid>
 </Page>
