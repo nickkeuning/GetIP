@@ -34,12 +34,11 @@ namespace GetIP
         {
             get
             {
-                var res = NetworkInformation.GetHostNames()
+                return NetworkInformation.GetHostNames()
                     .Where(hn => hn.IPInformation != null)
                     .Where(hn => hn.Type == HostNameType.Ipv4)
-                    .FirstOrDefault();
-
-                return res?.ToString();
+                    .FirstOrDefault()?
+                    .ToString();
             }
         }
     }
